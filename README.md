@@ -9,7 +9,7 @@ Features:
 - Ability to search in everynote (tag,tite,text).
 - Fast, no battery drain, optimized performance
 - Follows UI,UX Design pattern.
-- Local database (Sqlite)
+- Local database (sqlite-net-pcl)
 - Open-source
 
 Ynote is available on APKPure "https://apkpure.com/ynote/com.ynote"
