@@ -8,6 +8,7 @@ Features:
 - Ability to record audio with the note
 - Ability to search in everynote (tag,tite,text).
 - Ability to use custom different password for each note
+- Ability to filter by specific tag by clicking on it (one click filter)
 - Fast, no battery drain, optimized performance
 - Follows UI,UX Design pattern.
 - Local database (sqlite-net-pcl)
