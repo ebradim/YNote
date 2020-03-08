@@ -1,0 +1,243 @@
+﻿
+<android.support.percent.PercentRelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+       
+    <EditText
+        android:id="@+id/txtNoteTitle"
+         android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+
+                    android:textSize="14sp"
+app:layout_marginTopPercent="11%"
+            android:layout_marginRight="20dp"
+                    android:paddingTop="10dp"
+                    android:gravity="top|start"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+        android:background="@drawable/roundinput"
+                    android:backgroundTint="#ffffff"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#202020"/>
+
+    <EditText
+        android:id="@+id/txtNoteEditor"
+         android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        app:layout_heightPercent="60%"
+        app:layout_marginTopPercent="18%"
+
+                    android:textSize="14sp"
+        android:allowUndo="true"
+        android:autoLink="all"
+        
+        android:scrollbars="vertical"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="10dp"
+                    android:gravity="top|start"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+        android:background="@drawable/roundinput"
+                    android:backgroundTint="#ffffff"
+        android:textColor="#202020"/>
+
+    <EditText
+            android:id="@+id/txtNotePass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+    android:background="@drawable/roundinput"
+    android:backgroundTint="#ffffff"
+        android:textColor="#202020"
+        android:textColorHint="#c1c1c1"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:inputType= "textPassword"
+        android:textSize="14sp"
+         app:layout_marginTopPercent="86%"
+        android:hint="Set or Change password(optional)"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/txtNoteTag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+    android:layout_marginTop="500dp"
+            android:layout_alignParentLeft="true"
+    android:background="@drawable/roundinput"
+    android:backgroundTint="#ffffff"
+        android:textColor="#202020"
+         app:layout_marginTopPercent="79%"
+        android:textColorHint="#c1c1c1"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+        android:hint="#csharp"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:text="Date"
+        
+        android:textColor="#c9c9c9"
+    android:layout_marginTop="10dp"
+    android:gravity="left"
+    android:textSize="11sp"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#fafafa"
+        android:gravity="center"
+        app:layout_marginTopPercent="3.5%"
+            android:orientation="horizontal"
+    >
+             <Button
+            android:id="@+id/btnPLayRecord"
+     android:layout_width="wrap_content"
+     android:layout_height="40dp"
+        android:text="Play"
+            android:layout_marginRight="2dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/icon_mic_playxml"
+        android:textSize="18dp"
+            android:background="@drawable/insidebuttons"
+        android:stateListAnimator="@null"/>
+              <View
+            android:id="@+id/viewRecord"
+            android:background="#e1e1e1"
+            android:layout_width="1dp"
+             android:layout_marginRight="2dp"
+            android:layout_height="40dp"/>
+ <Button
+            android:id="@+id/btnSizeUp"
+     android:layout_width="40dp"
+     android:layout_height="40dp"
+        android:text="+"
+         android:fontFamily="monospace"
+        android:textSize="18dp"
+ android:layout_marginRight="2dp"
+        android:background="@drawable/insidebuttons"
+        android:stateListAnimator="@null"/>
+   
+     <Button
+            android:id="@+id/btnSizeDown"
+     android:layout_width="40dp"
+     android:layout_height="40dp"
+        android:text="-"
+            android:fontFamily="monospace"
+        android:textSize="18dp"
+             android:layout_marginRight="2dp"
+            android:background="@drawable/insidebuttons"
+            android:stateListAnimator="@null"
+        />
+  <View  
+            android:background="#e1e1e1"
+            android:layout_width="1dp"
+             android:layout_marginRight="2dp"
+            android:layout_height="40dp"/>
+    <Button
+            android:id="@+id/btnCopy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+            android:paddingLeft="6dp"
+            android:fontFamily="monospace"
+         android:drawableTint="#4d4d4d"
+             android:layout_marginRight="2dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/insidebuttons"
+            android:drawableLeft="?android:attr/actionModeCopyDrawable"
+        android:textSize="18dp"   />
+ <View
+            android:layout_width="1dp"
+            
+            android:layout_height="40dp"/>
+    <Button
+            android:id="@+id/btnSelectAll"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+            android:paddingLeft="7dp"
+            android:drawableTint="#4d4d4d"
+            android:fontFamily="monospace"
+             android:layout_marginRight="2dp"
+            android:drawableLeft="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+        android:textSize="18dp"
+            android:background="@drawable/insidebuttons"
+            android:stateListAnimator="@null"/>
+
+ <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"/>
+    <Button
+            android:id="@+id/btnCenter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+            android:text="≡"
+            android:paddingBottom="3dp"
+            android:gravity="center|top"
+           android:textColor="#4d4d4d"
+            android:fontFamily="monospace"
+        android:textSize="30dp" 
+            android:background="@drawable/insidebuttons"
+            android:stateListAnimator="@null"/>
+
+</LinearLayout>
+      
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+                android:layout_alignParentBottom="true"
+            >
+           
+        
+             
+
+                
+                <Button
+                android:id="@+id/btnRestore"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+        android:text=" Restore    "
+                android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+                android:drawableLeft= "@drawable/restore_none"
+                android:background="@drawable/btnsettings_bck"/>
+         <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+                android:layout_marginBottom="1dp"
+                    android:layout_marginRight="5dp"
+                android:paddingLeft="10dp"
+        android:textSize="15sp"
+            android:text="Save  "
+                android:background="@drawable/btnsettings_bck"
+                android:drawableLeft ="@drawable/save_none" />
+
+                     
+    
+        
+                </LinearLayout>
+  </android.support.percent.PercentRelativeLayout>
+

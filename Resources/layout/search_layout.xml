@@ -1,0 +1,114 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+            
+    <android.support.v7.widget.CardView
+                                
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ssda"
+        app:cardElevation="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#38EF7D"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText
+                                android:id="@+id/SearchTxt"
+
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:hint="Search by #tagname, note or title"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+                android:background="@drawable/roundinput"
+                android:backgroundTint="#38EF7D"
+            android:textSize="15sp"/>
+            <Button
+                android:id="@+id/btnSearchClickFindTagTexT"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="10dp"
+                android:text=" Find"
+                android:gravity="left|center"
+                android:textColor="#ffffff"
+                android:paddingLeft="15dp"
+                android:background="@drawable/btnsettings_bck"
+                android:drawableLeft = "@drawable/edit_none"
+            />
+
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginBottom="25dp">
+            <ScrollView
+        android:id="@+id/scrollProfileNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        >
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SearchResultLinear"
+            android:orientation="vertical"
+        android:gravity="center"
+                android:layout_marginBottom="25dp"
+        android:background="#ffffff"
+        >
+            
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+</LinearLayout>
+      
+      
+    </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <Space
+        android:layout_width="fill_parent"
+        android:layout_height="20px"/>
+  
+     
+
+</RelativeLayout>
