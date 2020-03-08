@@ -14,3 +14,5 @@ Features:
 
 Ynote is available on APKPure "https://apkpure.com/ynote/com.ynote"
 Soon on GalaxyStore
+
+![Screenshot_20200222-100123](https://user-images.githubusercontent.com/50548116/76162461-b3c72800-6146-11ea-9142-86520994f1f9.jpg)
