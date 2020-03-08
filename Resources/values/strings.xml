@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YnoteLite</string>
+    <string name="action_settings">Settings</string>
+    <string name="Delete">Delete</string>
+    <string name="Unlock_one_time">Unlock this time</string>
+    <string name="Unlock_remove_password">Unlock and remove password </string>
+    <string name="Unlock">Unlock</string>
+    <string name="View">View</string>
+  
+</resources>
